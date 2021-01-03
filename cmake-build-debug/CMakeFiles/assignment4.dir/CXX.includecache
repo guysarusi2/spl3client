@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/guy/CLionProjects/assignment4/MessageEncoderDecoder.cpp
+MessageEncoderDecoder.h
+/home/guy/CLionProjects/assignment4/MessageEncoderDecoder.h
+
+/home/guy/CLionProjects/assignment4/MessageEncoderDecoder.h
+iostream
+-
+sstream
+-
+unordered_map
+-
+string
+-
+vector
+-
+
