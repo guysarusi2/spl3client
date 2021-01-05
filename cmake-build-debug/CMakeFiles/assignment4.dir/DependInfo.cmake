@@ -4,10 +4,10 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
+  "/home/guy/CLionProjects/assignment4/BGRSclient.cpp" "/home/guy/CLionProjects/assignment4/cmake-build-debug/CMakeFiles/assignment4.dir/BGRSclient.cpp.o"
   "/home/guy/CLionProjects/assignment4/MessageEncoderDecoder.cpp" "/home/guy/CLionProjects/assignment4/cmake-build-debug/CMakeFiles/assignment4.dir/MessageEncoderDecoder.cpp.o"
   "/home/guy/CLionProjects/assignment4/Protocol.cpp" "/home/guy/CLionProjects/assignment4/cmake-build-debug/CMakeFiles/assignment4.dir/Protocol.cpp.o"
   "/home/guy/CLionProjects/assignment4/connectionHandler.cpp" "/home/guy/CLionProjects/assignment4/cmake-build-debug/CMakeFiles/assignment4.dir/connectionHandler.cpp.o"
-  "/home/guy/CLionProjects/assignment4/echoClient.cpp" "/home/guy/CLionProjects/assignment4/cmake-build-debug/CMakeFiles/assignment4.dir/echoClient.cpp.o"
   "/home/guy/CLionProjects/assignment4/encoderdecoder.cpp" "/home/guy/CLionProjects/assignment4/cmake-build-debug/CMakeFiles/assignment4.dir/encoderdecoder.cpp.o"
   "/home/guy/CLionProjects/assignment4/main.cpp" "/home/guy/CLionProjects/assignment4/cmake-build-debug/CMakeFiles/assignment4.dir/main.cpp.o"
   )

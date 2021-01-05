@@ -50,12 +50,12 @@ void readFromKeyboard(ConnectionHandler &connectionHandler, MessageEncoderDecode
             std::cout << "Disconnected. Exiting...\n" << std::endl;
             break;
         }
-        for (int i = 0; i < bufferToSendSize; ++i) {
-            std::cout<<"i= "<<i<<" "<<bufferToSend[i]<<std::endl;
-        }
-        std::cout<<std::endl;
-
-        std::cout<<"message sent"<<std::endl;
+        //todo delete
+//        for (int i = 0; i < bufferToSendSize; ++i) {
+//            std::cout<<"i= "<<i<<" "<<bufferToSend[i]<<std::endl;
+//        }
+       // std::cout<<std::endl;
+        //std::cout<<"message sent"<<std::endl;
     }
 }
 
@@ -100,12 +100,13 @@ int main(int argc, char *argv[]) {
             }
             answerOpcodes.push_back(ch);
         }
-        for (int i = 0; i < answerOpcodes.size(); ++i) {
-           std::cout <<answerOpcodes[i];
-        }
+        //todo delete
+//        for (int i = 0; i < answerOpcodes.size(); ++i) {
+//           std::cout <<answerOpcodes[i];
+//        }
+        //std::cout<<std::endl;
 
 
-        std::cout<<std::endl;
         std::vector<short> opcodesToProcess(messageEncoderDecoder.decodeOpcodes(answerOpcodes));
         bool extraInfo = protocol.process(opcodesToProcess);
         /**

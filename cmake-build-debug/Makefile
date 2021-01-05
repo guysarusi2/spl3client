@@ -143,6 +143,33 @@ assignment4/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/assignment4.dir/build.make CMakeFiles/assignment4.dir/build
 .PHONY : assignment4/fast
 
+BGRSclient.o: BGRSclient.cpp.o
+
+.PHONY : BGRSclient.o
+
+# target to build an object file
+BGRSclient.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/assignment4.dir/build.make CMakeFiles/assignment4.dir/BGRSclient.cpp.o
+.PHONY : BGRSclient.cpp.o
+
+BGRSclient.i: BGRSclient.cpp.i
+
+.PHONY : BGRSclient.i
+
+# target to preprocess a source file
+BGRSclient.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/assignment4.dir/build.make CMakeFiles/assignment4.dir/BGRSclient.cpp.i
+.PHONY : BGRSclient.cpp.i
+
+BGRSclient.s: BGRSclient.cpp.s
+
+.PHONY : BGRSclient.s
+
+# target to generate assembly for a file
+BGRSclient.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/assignment4.dir/build.make CMakeFiles/assignment4.dir/BGRSclient.cpp.s
+.PHONY : BGRSclient.cpp.s
+
 MessageEncoderDecoder.o: MessageEncoderDecoder.cpp.o
 
 .PHONY : MessageEncoderDecoder.o
@@ -224,33 +251,6 @@ connectionHandler.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/assignment4.dir/build.make CMakeFiles/assignment4.dir/connectionHandler.cpp.s
 .PHONY : connectionHandler.cpp.s
 
-echoClient.o: echoClient.cpp.o
-
-.PHONY : echoClient.o
-
-# target to build an object file
-echoClient.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/assignment4.dir/build.make CMakeFiles/assignment4.dir/echoClient.cpp.o
-.PHONY : echoClient.cpp.o
-
-echoClient.i: echoClient.cpp.i
-
-.PHONY : echoClient.i
-
-# target to preprocess a source file
-echoClient.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/assignment4.dir/build.make CMakeFiles/assignment4.dir/echoClient.cpp.i
-.PHONY : echoClient.cpp.i
-
-echoClient.s: echoClient.cpp.s
-
-.PHONY : echoClient.s
-
-# target to generate assembly for a file
-echoClient.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/assignment4.dir/build.make CMakeFiles/assignment4.dir/echoClient.cpp.s
-.PHONY : echoClient.cpp.s
-
 encoderdecoder.o: encoderdecoder.cpp.o
 
 .PHONY : encoderdecoder.o
@@ -314,6 +314,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... assignment4"
+	@echo "... BGRSclient.o"
+	@echo "... BGRSclient.i"
+	@echo "... BGRSclient.s"
 	@echo "... MessageEncoderDecoder.o"
 	@echo "... MessageEncoderDecoder.i"
 	@echo "... MessageEncoderDecoder.s"
@@ -323,9 +326,6 @@ help:
 	@echo "... connectionHandler.o"
 	@echo "... connectionHandler.i"
 	@echo "... connectionHandler.s"
-	@echo "... echoClient.o"
-	@echo "... echoClient.i"
-	@echo "... echoClient.s"
 	@echo "... encoderdecoder.o"
 	@echo "... encoderdecoder.i"
 	@echo "... encoderdecoder.s"

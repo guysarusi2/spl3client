@@ -12,4 +12,4 @@ link_libraries(Boost::thread)
 
 include_directories(${Boost_INCLUDE_DIR})
 
-add_executable(assignment4 echoClient.cpp main.cpp  ${Headers} ${Sources})
+add_executable(assignment4 BGRSclient.cpp main.cpp  ${Headers} ${Sources})

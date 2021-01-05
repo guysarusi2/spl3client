@@ -1,8 +1,8 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/assignment4.dir/BGRSclient.cpp.o"
   "CMakeFiles/assignment4.dir/MessageEncoderDecoder.cpp.o"
   "CMakeFiles/assignment4.dir/Protocol.cpp.o"
   "CMakeFiles/assignment4.dir/connectionHandler.cpp.o"
-  "CMakeFiles/assignment4.dir/echoClient.cpp.o"
   "CMakeFiles/assignment4.dir/encoderdecoder.cpp.o"
   "CMakeFiles/assignment4.dir/main.cpp.o"
   "assignment4"

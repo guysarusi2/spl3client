@@ -6,9 +6,21 @@
 
 #IncludeRegexTransform: 
 
-/home/guy/CLionProjects/assignment4/MessageEncoderDecoder.cpp
+/home/guy/CLionProjects/assignment4/BGRSclient.cpp
+stdlib.h
+-
+connectionHandler.h
+/home/guy/CLionProjects/assignment4/connectionHandler.h
 MessageEncoderDecoder.h
 /home/guy/CLionProjects/assignment4/MessageEncoderDecoder.h
+Protocol.h
+/home/guy/CLionProjects/assignment4/Protocol.h
+thread
+-
+unordered_map
+-
+boost/thread/thread.hpp
+-
 
 /home/guy/CLionProjects/assignment4/MessageEncoderDecoder.h
 iostream
@@ -20,5 +32,25 @@ unordered_map
 string
 -
 vector
+-
+
+/home/guy/CLionProjects/assignment4/Protocol.h
+unordered_map
+-
+vector
+-
+string
+-
+
+/home/guy/CLionProjects/assignment4/connectionHandler.h
+string
+-
+iostream
+-
+boost/asio.hpp
+-
+boost/algorithm/string/classification.hpp
+-
+boost/algorithm/string/split.hpp
 -
 

@@ -77,18 +77,18 @@ include CMakeFiles/assignment4.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/assignment4.dir/flags.make
 
-CMakeFiles/assignment4.dir/echoClient.cpp.o: CMakeFiles/assignment4.dir/flags.make
-CMakeFiles/assignment4.dir/echoClient.cpp.o: ../echoClient.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guy/CLionProjects/assignment4/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/assignment4.dir/echoClient.cpp.o"
-	/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/assignment4.dir/echoClient.cpp.o -c /home/guy/CLionProjects/assignment4/echoClient.cpp
+CMakeFiles/assignment4.dir/BGRSclient.cpp.o: CMakeFiles/assignment4.dir/flags.make
+CMakeFiles/assignment4.dir/BGRSclient.cpp.o: ../BGRSclient.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guy/CLionProjects/assignment4/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/assignment4.dir/BGRSclient.cpp.o"
+	/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/assignment4.dir/BGRSclient.cpp.o -c /home/guy/CLionProjects/assignment4/BGRSclient.cpp
 
-CMakeFiles/assignment4.dir/echoClient.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/assignment4.dir/echoClient.cpp.i"
-	/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/guy/CLionProjects/assignment4/echoClient.cpp > CMakeFiles/assignment4.dir/echoClient.cpp.i
+CMakeFiles/assignment4.dir/BGRSclient.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/assignment4.dir/BGRSclient.cpp.i"
+	/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/guy/CLionProjects/assignment4/BGRSclient.cpp > CMakeFiles/assignment4.dir/BGRSclient.cpp.i
 
-CMakeFiles/assignment4.dir/echoClient.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/assignment4.dir/echoClient.cpp.s"
-	/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/guy/CLionProjects/assignment4/echoClient.cpp -o CMakeFiles/assignment4.dir/echoClient.cpp.s
+CMakeFiles/assignment4.dir/BGRSclient.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/assignment4.dir/BGRSclient.cpp.s"
+	/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/guy/CLionProjects/assignment4/BGRSclient.cpp -o CMakeFiles/assignment4.dir/BGRSclient.cpp.s
 
 CMakeFiles/assignment4.dir/main.cpp.o: CMakeFiles/assignment4.dir/flags.make
 CMakeFiles/assignment4.dir/main.cpp.o: ../main.cpp
@@ -157,7 +157,7 @@ CMakeFiles/assignment4.dir/connectionHandler.cpp.s: cmake_force
 
 # Object files for target assignment4
 assignment4_OBJECTS = \
-"CMakeFiles/assignment4.dir/echoClient.cpp.o" \
+"CMakeFiles/assignment4.dir/BGRSclient.cpp.o" \
 "CMakeFiles/assignment4.dir/main.cpp.o" \
 "CMakeFiles/assignment4.dir/encoderdecoder.cpp.o" \
 "CMakeFiles/assignment4.dir/MessageEncoderDecoder.cpp.o" \
@@ -167,7 +167,7 @@ assignment4_OBJECTS = \
 # External object files for target assignment4
 assignment4_EXTERNAL_OBJECTS =
 
-assignment4: CMakeFiles/assignment4.dir/echoClient.cpp.o
+assignment4: CMakeFiles/assignment4.dir/BGRSclient.cpp.o
 assignment4: CMakeFiles/assignment4.dir/main.cpp.o
 assignment4: CMakeFiles/assignment4.dir/encoderdecoder.cpp.o
 assignment4: CMakeFiles/assignment4.dir/MessageEncoderDecoder.cpp.o

@@ -88,6 +88,9 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/home/guy/CLionProjects/assignment4/BGRSclient.cpp">
+			<Option target="assignment4"/>
+		</Unit>
 		<Unit filename="/home/guy/CLionProjects/assignment4/MessageEncoderDecoder.cpp">
 			<Option target="assignment4"/>
 		</Unit>
@@ -104,9 +107,6 @@
 			<Option target="assignment4"/>
 		</Unit>
 		<Unit filename="/home/guy/CLionProjects/assignment4/connectionHandler.h">
-			<Option target="assignment4"/>
-		</Unit>
-		<Unit filename="/home/guy/CLionProjects/assignment4/echoClient.cpp">
 			<Option target="assignment4"/>
 		</Unit>
 		<Unit filename="/home/guy/CLionProjects/assignment4/encoderdecoder.cpp">
