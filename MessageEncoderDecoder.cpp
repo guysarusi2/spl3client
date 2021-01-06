@@ -20,11 +20,6 @@ MessageEncoderDecoder::MessageEncoderDecoder() : opCode({{"ADMINREG",     1},
 
 }
 
-//todo delete
-//void MessageEncoderDecoder::stringToCharArray(std::string &str, char &buf, int bufSize) {
-//
-//}
-
 
 void MessageEncoderDecoder::twoPartsMessage(std::vector<std::string> &messageToEncode, std::vector<char> &buf) {
     //add to buf the first string+\0+ second string+\0
@@ -48,12 +43,9 @@ void MessageEncoderDecoder::shortToBytes(short num, std::vector<char> &buf) {
 }
 
 short MessageEncoderDecoder::bytesToShort(std::vector<char> &messageToDecode, int index) {
-    //if (index + 1 < messageToDecode.size()) {
         short result = (short) ((messageToDecode[index] & 0xff) << 8);
         result += (short) (messageToDecode[index + 1] & 0xff);
         return result;
-    //}
-    return -1;
 }
 
 void MessageEncoderDecoder::createMessage(std::vector<std::string> &messageToEncode, std::vector<char> &buf) {

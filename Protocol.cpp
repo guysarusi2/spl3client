@@ -5,7 +5,8 @@
 #include <iostream>
 #include "Protocol.h"
 
-Protocol::Protocol() : shouldTerminate(false), serverMessages({{12, "ACK"},{13,"ERROR"}}) {
+Protocol::Protocol() : shouldTerminate(false), logoutConfirmation(std::promise<bool>()), serverMessages({{12, "ACK"},
+                                                                                                         {13, "ERROR"}}) {
 }
 
 bool Protocol::process(std::vector<short> &opcodeToProcess) {
@@ -17,6 +18,11 @@ bool Protocol::process(std::vector<short> &opcodeToProcess) {
             return checkExtraInfo(messageOpcode);
         case 13://ERROR
             std::cout << serverMessages[command] << " " << messageOpcode << std::endl;
+            switch (messageOpcode) {  //check if logout failed and
+                case 4:
+                    logoutConfirmation.set_value(false);
+                    break;
+            }
             break;
         default:
             break;
@@ -32,6 +38,7 @@ bool Protocol::checkExtraInfo(short messageOpCode) {
     switch (messageOpCode) {
         case 4://logout
             shouldTerminate = true;
+            logoutConfirmation.set_value(true);
             return false;
         case 6://kdamcheck
         case 7://coursestat
@@ -42,4 +49,12 @@ bool Protocol::checkExtraInfo(short messageOpCode) {
         default:
             return false;
     }
+}
+
+std::future<bool> Protocol::getLogoutFuture() {
+    return logoutConfirmation.get_future();
+}
+
+void Protocol::setNewPromise() {
+    logoutConfirmation = std::promise<bool>();
 }

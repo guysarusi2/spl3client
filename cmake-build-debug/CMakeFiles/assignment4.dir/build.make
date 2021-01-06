@@ -103,9 +103,22 @@ CMakeFiles/assignment4.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/assignment4.dir/main.cpp.s"
 	/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/guy/CLionProjects/assignment4/main.cpp -o CMakeFiles/assignment4.dir/main.cpp.s
 
+CMakeFiles/assignment4.dir/connectionHandler.cpp.o: CMakeFiles/assignment4.dir/flags.make
+CMakeFiles/assignment4.dir/connectionHandler.cpp.o: ../connectionHandler.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guy/CLionProjects/assignment4/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/assignment4.dir/connectionHandler.cpp.o"
+	/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/assignment4.dir/connectionHandler.cpp.o -c /home/guy/CLionProjects/assignment4/connectionHandler.cpp
+
+CMakeFiles/assignment4.dir/connectionHandler.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/assignment4.dir/connectionHandler.cpp.i"
+	/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/guy/CLionProjects/assignment4/connectionHandler.cpp > CMakeFiles/assignment4.dir/connectionHandler.cpp.i
+
+CMakeFiles/assignment4.dir/connectionHandler.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/assignment4.dir/connectionHandler.cpp.s"
+	/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/guy/CLionProjects/assignment4/connectionHandler.cpp -o CMakeFiles/assignment4.dir/connectionHandler.cpp.s
+
 CMakeFiles/assignment4.dir/encoderdecoder.cpp.o: CMakeFiles/assignment4.dir/flags.make
 CMakeFiles/assignment4.dir/encoderdecoder.cpp.o: ../encoderdecoder.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guy/CLionProjects/assignment4/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/assignment4.dir/encoderdecoder.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guy/CLionProjects/assignment4/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/assignment4.dir/encoderdecoder.cpp.o"
 	/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/assignment4.dir/encoderdecoder.cpp.o -c /home/guy/CLionProjects/assignment4/encoderdecoder.cpp
 
 CMakeFiles/assignment4.dir/encoderdecoder.cpp.i: cmake_force
@@ -118,7 +131,7 @@ CMakeFiles/assignment4.dir/encoderdecoder.cpp.s: cmake_force
 
 CMakeFiles/assignment4.dir/MessageEncoderDecoder.cpp.o: CMakeFiles/assignment4.dir/flags.make
 CMakeFiles/assignment4.dir/MessageEncoderDecoder.cpp.o: ../MessageEncoderDecoder.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guy/CLionProjects/assignment4/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/assignment4.dir/MessageEncoderDecoder.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guy/CLionProjects/assignment4/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/assignment4.dir/MessageEncoderDecoder.cpp.o"
 	/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/assignment4.dir/MessageEncoderDecoder.cpp.o -c /home/guy/CLionProjects/assignment4/MessageEncoderDecoder.cpp
 
 CMakeFiles/assignment4.dir/MessageEncoderDecoder.cpp.i: cmake_force
@@ -131,7 +144,7 @@ CMakeFiles/assignment4.dir/MessageEncoderDecoder.cpp.s: cmake_force
 
 CMakeFiles/assignment4.dir/Protocol.cpp.o: CMakeFiles/assignment4.dir/flags.make
 CMakeFiles/assignment4.dir/Protocol.cpp.o: ../Protocol.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guy/CLionProjects/assignment4/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/assignment4.dir/Protocol.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guy/CLionProjects/assignment4/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/assignment4.dir/Protocol.cpp.o"
 	/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/assignment4.dir/Protocol.cpp.o -c /home/guy/CLionProjects/assignment4/Protocol.cpp
 
 CMakeFiles/assignment4.dir/Protocol.cpp.i: cmake_force
@@ -142,37 +155,24 @@ CMakeFiles/assignment4.dir/Protocol.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/assignment4.dir/Protocol.cpp.s"
 	/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/guy/CLionProjects/assignment4/Protocol.cpp -o CMakeFiles/assignment4.dir/Protocol.cpp.s
 
-CMakeFiles/assignment4.dir/connectionHandler.cpp.o: CMakeFiles/assignment4.dir/flags.make
-CMakeFiles/assignment4.dir/connectionHandler.cpp.o: ../connectionHandler.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guy/CLionProjects/assignment4/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/assignment4.dir/connectionHandler.cpp.o"
-	/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/assignment4.dir/connectionHandler.cpp.o -c /home/guy/CLionProjects/assignment4/connectionHandler.cpp
-
-CMakeFiles/assignment4.dir/connectionHandler.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/assignment4.dir/connectionHandler.cpp.i"
-	/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/guy/CLionProjects/assignment4/connectionHandler.cpp > CMakeFiles/assignment4.dir/connectionHandler.cpp.i
-
-CMakeFiles/assignment4.dir/connectionHandler.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/assignment4.dir/connectionHandler.cpp.s"
-	/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/guy/CLionProjects/assignment4/connectionHandler.cpp -o CMakeFiles/assignment4.dir/connectionHandler.cpp.s
-
 # Object files for target assignment4
 assignment4_OBJECTS = \
 "CMakeFiles/assignment4.dir/BGRSclient.cpp.o" \
 "CMakeFiles/assignment4.dir/main.cpp.o" \
+"CMakeFiles/assignment4.dir/connectionHandler.cpp.o" \
 "CMakeFiles/assignment4.dir/encoderdecoder.cpp.o" \
 "CMakeFiles/assignment4.dir/MessageEncoderDecoder.cpp.o" \
-"CMakeFiles/assignment4.dir/Protocol.cpp.o" \
-"CMakeFiles/assignment4.dir/connectionHandler.cpp.o"
+"CMakeFiles/assignment4.dir/Protocol.cpp.o"
 
 # External object files for target assignment4
 assignment4_EXTERNAL_OBJECTS =
 
 assignment4: CMakeFiles/assignment4.dir/BGRSclient.cpp.o
 assignment4: CMakeFiles/assignment4.dir/main.cpp.o
+assignment4: CMakeFiles/assignment4.dir/connectionHandler.cpp.o
 assignment4: CMakeFiles/assignment4.dir/encoderdecoder.cpp.o
 assignment4: CMakeFiles/assignment4.dir/MessageEncoderDecoder.cpp.o
 assignment4: CMakeFiles/assignment4.dir/Protocol.cpp.o
-assignment4: CMakeFiles/assignment4.dir/connectionHandler.cpp.o
 assignment4: CMakeFiles/assignment4.dir/build.make
 assignment4: /usr/lib/x86_64-linux-gnu/libboost_thread.so.1.71.0
 assignment4: /usr/lib/x86_64-linux-gnu/libboost_atomic.so.1.71.0

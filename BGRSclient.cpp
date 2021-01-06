@@ -2,10 +2,8 @@
 #include "connectionHandler.h"
 #include "MessageEncoderDecoder.h"
 #include "Protocol.h"
-#include <thread>
 #include <unordered_map>
 #include <boost/thread/thread.hpp>
-
 
 
 void readFromKeyboard(ConnectionHandler &connectionHandler, MessageEncoderDecoder &messageEncoderDecoder,
@@ -39,10 +37,6 @@ void readFromKeyboard(ConnectionHandler &connectionHandler, MessageEncoderDecode
             bufferToSend[i] = buffer[i];
         }
 
-        //todo- clear the vector? not necessary since next loop new one?
-        messageToEncode.clear();
-        buffer.clear();
-
         /**
          * we send the encoded bufferToSend using sendBytes()
          */
@@ -50,12 +44,11 @@ void readFromKeyboard(ConnectionHandler &connectionHandler, MessageEncoderDecode
             std::cout << "Disconnected. Exiting...\n" << std::endl;
             break;
         }
-        //todo delete
-//        for (int i = 0; i < bufferToSendSize; ++i) {
-//            std::cout<<"i= "<<i<<" "<<bufferToSend[i]<<std::endl;
-//        }
-       // std::cout<<std::endl;
-        //std::cout<<"message sent"<<std::endl;
+        //sleep on the future object until answer
+        if (messageToEncode[0] == "LOGOUT") {
+            if (!protocol.getLogoutFuture().get())
+                protocol.setNewPromise(); //logout fail we need new promise
+        }
     }
 }
 
@@ -67,9 +60,7 @@ int main(int argc, char *argv[]) {
     std::string host = argv[1];
     short port = atoi(argv[2]);
 
-    /**
-     * connect to server
-     */
+    //connect to server
     ConnectionHandler connectionHandler(host, port);
     if (!connectionHandler.connect()) {
         std::cerr << "Cannot connect to " << host << ":" << port << std::endl;
@@ -78,15 +69,12 @@ int main(int argc, char *argv[]) {
         std::cout << "connected" << std::endl;
     }
 
+    //CREATE the meesage encoder-decoder, message protocol
     MessageEncoderDecoder messageEncoderDecoder;
     Protocol protocol;
-
-    /**
-     * boost thread
-     */
-
-    boost::thread keyboardThread(&readFromKeyboard, boost::ref(connectionHandler), boost::ref(messageEncoderDecoder),boost::ref(protocol));
-   // std::thread t(&readFromKeyboard, std::ref(connectionHandler),std::ref(messageEncoderDecoder),std::ref(protocol));
+    //CREATE the thread that read input keyboard and send the messages to server
+    boost::thread keyboardThread(&readFromKeyboard, boost::ref(connectionHandler), boost::ref(messageEncoderDecoder),
+                                 boost::ref(protocol));
     while (!protocol.getShouldTerminate()) {
         /**
          * we first get the command and message opcode and process them
@@ -100,12 +88,6 @@ int main(int argc, char *argv[]) {
             }
             answerOpcodes.push_back(ch);
         }
-        //todo delete
-//        for (int i = 0; i < answerOpcodes.size(); ++i) {
-//           std::cout <<answerOpcodes[i];
-//        }
-        //std::cout<<std::endl;
-
 
         std::vector<short> opcodesToProcess(messageEncoderDecoder.decodeOpcodes(answerOpcodes));
         bool extraInfo = protocol.process(opcodesToProcess);
@@ -118,10 +100,9 @@ int main(int argc, char *argv[]) {
                 std::cout << "Disconnected. Exiting...\n" << std::endl;
                 break;
             }
-            //todo the null char is not append, maybe we need to append it
-            //optionalData.append(1,'\0');
             std::cout << optionalData << std::endl;
         }
     }
+    keyboardThread.join();
     return 0;
 }

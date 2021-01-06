@@ -65,14 +65,10 @@ bool ConnectionHandler::sendBytes(const char bytes[], int bytesToWrite) {
 }
 
 bool ConnectionHandler::getLine(std::string &line) {
-    //todo use \0 OR /n
-    //return getFrameAscii(line, '\0');
     return getFrameAscii(line, '\n');
 }
 
 bool ConnectionHandler::sendLine(std::string &line) {
-    //todo use \0 OR /n
-    //return sendFrameAscii(line, '\0');
     return sendFrameAscii(line, '\n');
 }
 
@@ -85,8 +81,6 @@ bool ConnectionHandler::getFrameAscii(std::string &frame, char delimiter) {
             if (!getBytes(&ch, 1)) {
                 return false;
             }
-            //todo delete ? they stop when null and not delimiter
-            //if (ch != '\0')
             if (ch != delimiter)
                 frame.append(1, ch);
         } while (delimiter != ch);

@@ -29,6 +29,12 @@
 //    char buf[bufsize];
 //    int len(0);
 //
+//    promise<bool> pro= promise<bool>();
+//    future<bool> f=pro.get_future();
+//    this_thread::sleep_for(chrono::seconds(2));
+//    pro.set_value(true);
+//    cout << (bool)f.get()<<endl;
+//
 ////    string s("1237");
 ////    short a;
 ////    from_string(a,s);

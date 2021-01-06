@@ -15,12 +15,14 @@ MessageEncoderDecoder.h
 /home/guy/CLionProjects/assignment4/MessageEncoderDecoder.h
 Protocol.h
 /home/guy/CLionProjects/assignment4/Protocol.h
-thread
--
 unordered_map
 -
 boost/thread/thread.hpp
 -
+
+/home/guy/CLionProjects/assignment4/MessageEncoderDecoder.cpp
+MessageEncoderDecoder.h
+/home/guy/CLionProjects/assignment4/MessageEncoderDecoder.h
 
 /home/guy/CLionProjects/assignment4/MessageEncoderDecoder.h
 iostream
@@ -41,6 +43,12 @@ vector
 -
 string
 -
+future
+-
+
+/home/guy/CLionProjects/assignment4/connectionHandler.cpp
+connectionHandler.h
+/home/guy/CLionProjects/assignment4/connectionHandler.h
 
 /home/guy/CLionProjects/assignment4/connectionHandler.h
 string
